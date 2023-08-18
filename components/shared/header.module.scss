@@ -1,0 +1,50 @@
+.header {
+  display: flex;
+  position: sticky;
+  top: 0;
+  justify-content: space-between;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  z-index: 5;
+  .logo {
+    a {
+      display: flex;
+      align-items: center;
+      span {
+        margin-left: 1.5rem;
+        font-family: var(--font-airbnb_cereal);
+        font-size: 25px;
+        font-weight: 700;
+        line-height: 100%;
+        text-transform: lowercase;
+      }
+    }
+  }
+  .content {
+    display: flex;
+    .navBar {
+      padding: 0 5px;
+
+      display: flex;
+      align-items: center;
+      .navLink {
+        font-size: 20px;
+        text-transform: uppercase;
+        &.active {
+          font-weight: bold;
+        }
+        & + .navLink {
+          margin-left: 50px;
+        }
+      }
+    }
+    .themeTrigger {
+      display: flex;
+      align-items: center;
+      margin-left: 42px;
+      button {
+        padding: 0;
+      }
+    }
+  }
+}
